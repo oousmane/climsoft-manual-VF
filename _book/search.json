@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Manuel de l’Utilisateur Climsoft",
+    "section": "",
+    "text": "Préface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "Qu’est-ce que Climsoft ?\nClimsoft est un système de gestion de base de données climatiques. Il est composé d’une suite de logiciels conçus pour stocker de manière sécurisée et flexible des données climatiques et pour générer des informations et produits utiles à partir de ces dernières. Climsoft peut être utilisé pour collecter, stocker et analyser des données climatiques provenant de différentes sources (stations classiques, automatiques, site de radiosondage etc.). La version 4 de l’application cliente Climsoft a été élaborée sous Microsoft Visual Basic .NET et le moteur de stockage, c’est à dire la base de données par défaut est le logiciel MariaDB, un dérivé de MySQL, qui est un logiciel libre.\n\n\n\n\n\n\nNote\n\n\n\n\nMariaDB Server est un système de gestion de base de données relationnelle open source à usage général. C’est l’un des serveurs de base de données les plus populaires au monde, avec des utilisateurs notables tels que Wikipedia, WordPress.com et Google. MariaDB Server est publié sous la licence open source GPLv2 et est garanti de rester open source. Il est dérivé de MySQL. En savoir plus ici : https://mariadb.org.\nMySQL est un système de gestion de bases de données relationnelles (SGBDR). Il est distribué sous une double licence GPL et propriétaire. Il fait partie des logiciels de gestion de base de données les plus utilisés au monde, autant par le grand public (applications web principalement) que par des professionnels, en concurrence avec Oracle, PostgreSQL et Microsoft SQL Server. En savoir plus ici : https://www.mysql.com\nVisual Basic est un langage de programmation orienté objet développé par Microsoft. L'utilisation de Visual Basic facilite la création d'applications .NET de type sécurisé. Ce permet le développement rapide d’applications, la création d’interfaces utilisateur graphiques ainsi que l’accès aux bases de données. En savoir plus ici : https://learn.microsoft.com/fr-fr/dotnet/visual-basic/\n\n\n\nLe système Climsoft comprend entre autres:\n\nLa base de données, qui contient les données climatiques de plusieurs stations dans une structure logique et structure logique et flexible ;\nDes formulaires de saisies, qui permet aux utilisateurs d’ajouter de nouvelles données à partir du clavier et ce de manière sûre et contrôlée.\nDes options permettant d’importer des données climatiques dans la base de données sous différents formats, par exemple des données provenant de stations météorologiques automatiques (SMA), CLICOM ASCII, NOAA GTS et des fichiers textes\nDes modules permettant exporter les données climatiques dans des formats prêts à être utilisés par de nombreuses applications climatiques à savoir RCimDex, Climate Predictability Tool (CPT), GeoCLIM, INSTAT ou R-INSTAT, Climate Data Tool, etc.;\nDes facilités de gestion d’images de documents papier (archives papiers) en soutien au programme de sauvetage de données de l’OMM ;\nDes options de contrôle de la qualité, et des modules de suivi, vérification des données insérées dans la base ;\nUn certain nombre de produits, des programmes d’application qui utilisent des sous-ensembles de données stockées dans la base de données pour produire des rapports utiles, des résumés, etc.\nDes fonctions de gestion du système pour gérer l’accès des utilisateurs, surveiller les opérations, d’administrer la base de données et d’adapter les fonctions du système aux besoins au niveau local."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Résumé",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "installation.html#configuration-système-requise",
+    "href": "installation.html#configuration-système-requise",
+    "title": "2  Installations",
+    "section": "2.1 Configuration système requise",
+    "text": "2.1 Configuration système requise\nSpécifications matérielles\nLe système Climsoft requiert les spécifications matérielles typiques suivantes : un PC avec une vitesse de processeur d’au moins 1 GHz, 2 Go de mémoire vive (RAM) et un espace disque suffisant pour l’installation du logiciel d’application et le stockage de la base de données. Un minimum de 20 Go d’espace disque est recommandé. Un espace disque plus important sera nécessaire pour le stockage des données provenant des stations météorologiques automatiques ainsi que les images des documents (archives) papier. Cependant, l’idéal serait de stocker les images des documents papier sur des supports de stockage amovibles tels que des disques durs externes ou sur un lecteur réseau. Une connexion Internet est également souhaitable.\nSpécifications logicielles\n\nPour une performance optimale de la base de données, il est recommandé d’utiliser le système d’exploitation (OS) Microsoft Windows 7 ou supérieur, 64 bits. Climsoft Version 4 est compatible avec les systèmes d’exploitation Windows suivants : XP, Vista, Windows 7, Windows 8.x et Windows 10 ;\nMicrosoft Office avec le tableur Excel est requis car le tableur Excel est l’application par défaut pour l’affichage des produits de données de Climsoft ;\nUn Logiciel antivirus ;\nLa version minimale .Net Framework 4.5 est requise. Cette version de .NET Framework est fournie avec le paquet d’installation de Climsoft ;\nLe paquet d’installation de Climsoft disponible ici\nLe système de base de données MariaDB/MySQL et les scripts de base de données de Climsoft sont également fournis par le programme d’installation de Climsoft et seront copiés dans le sous-dossier appelé “dbase” dans le chemin d’installation ;\nLe logiciel WRPlot pour produire les graphiques “rose de vent” qui sera copié dans le sous-dossier appelé “Bin” dans le chemin d’installation."
+  }
+]

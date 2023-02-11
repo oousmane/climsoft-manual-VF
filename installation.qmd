@@ -1,0 +1,29 @@
+# Installations 
+
+## Configuration système requise
+
+**Spécifications matérielles**
+
+Le système Climsoft requiert les spécifications matérielles typiques suivantes : un PC avec une vitesse de processeur d'au moins **1 GHz**, **2 Go de mémoire vive (RAM)** et un espace disque suffisant pour l'installation du logiciel d'application et le stockage de la base de données.
+**Un minimum de 20 Go d'espace disque** est recommandé.
+Un espace disque plus important sera nécessaire pour le stockage des données provenant des stations météorologiques automatiques ainsi que les images des documents (archives) papier.
+Cependant, l'idéal serait de stocker les images des documents papier sur des supports de stockage amovibles tels que des disques durs externes ou sur un lecteur réseau.
+**Une connexion Internet** est également souhaitable.
+
+**Spécifications logicielles**
+
+-   Pour une performance optimale de la base de données, il est recommandé d'utiliser le système d'exploitation (OS) Microsoft Windows 7 ou supérieur, 64 bits.
+    Climsoft Version 4 est compatible avec les systèmes d'exploitation Windows suivants : XP, Vista, Windows 7, Windows 8.x et Windows 10 ;
+
+-   Microsoft Office avec le tableur Excel est requis car le tableur Excel est l'application par défaut pour l'affichage des produits de données de Climsoft ;
+
+-   Un Logiciel antivirus ;
+
+-   La version minimale .Net Framework 4.5 est requise.
+    Cette version de .NET Framework est fournie avec le paquet d'installation de Climsoft ;
+
+-   Le paquet d'installation de Climsoft disponible [ici](https://github.com/climsoft/Climsoft/releases/)
+
+-   Le système de base de données **MariaDB/MySQL** et les scripts de base de données de Climsoft sont également fournis par le programme d'installation de Climsoft et seront copiés dans le sous-dossier appelé "dbase" dans le chemin d'installation ;
+
+-   Le logiciel **WRPlot** pour produire les graphiques "rose de vent" qui sera copié dans le sous-dossier appelé "Bin" dans le chemin d'installation.

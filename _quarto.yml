@@ -1,0 +1,32 @@
+project:
+  type: book
+
+book:
+  title: "Manuel de l'Utilisateur Climsoft"
+  subtitle: "Climsoft Version 4.1.x"
+  author: "Ousmane Ouedraogo"
+  date: "2/11/2023"
+  search: true
+  repo-url: https://github.com/oousmane/climsoft-manual-VF
+  repo-actions: [edit]
+  downloads: [pdf]
+  sharing: [twitter, facebook]
+  cover-image: "cover.png"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - installation.qmd
+    - summary.qmd
+    - references.qmd
+lang: fr
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
