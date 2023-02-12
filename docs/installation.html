@@ -146,7 +146,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table des matières</h2>
    
   <ul>
-  <li><a href="#configuration-système-requise" id="toc-configuration-système-requise" class="nav-link active" data-scroll-target="#configuration-système-requise"><span class="toc-section-number">2.1</span>  Configuration système requise</a></li>
+  <li><a href="#configuration-système-requise" id="toc-configuration-système-requise" class="nav-link active" data-scroll-target="#configuration-système-requise"><span class="toc-section-number">2.1</span>  Configuration système requise</a>
+  <ul class="collapse">
+  <li><a href="#spécifications-matérielles" id="toc-spécifications-matérielles" class="nav-link" data-scroll-target="#spécifications-matérielles"><span class="toc-section-number">2.1.1</span>  Spécifications matérielles</a></li>
+  <li><a href="#spécifications-logicielles" id="toc-spécifications-logicielles" class="nav-link" data-scroll-target="#spécifications-logicielles"><span class="toc-section-number">2.1.2</span>  Spécifications logicielles</a></li>
+  </ul></li>
+  <li><a href="#procédures-dinstallation" id="toc-procédures-dinstallation" class="nav-link" data-scroll-target="#procédures-dinstallation"><span class="toc-section-number">2.2</span>  Procédures d’installation</a></li>
+  <li><a href="#création-de-bdd-climsoft-dans-mariadb" id="toc-création-de-bdd-climsoft-dans-mariadb" class="nav-link" data-scroll-target="#création-de-bdd-climsoft-dans-mariadb"><span class="toc-section-number">2.3</span>  Création de BDD Climsoft dans MariaDB</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/oousmane/climsoft-manual-VF/edit/main/installation.qmd" class="toc-action">Modifier cette page</a></p></div></div></nav>
     </div>
@@ -172,11 +178,14 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="configuration-système-requise" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="configuration-système-requise"><span class="header-section-number">2.1</span> Configuration système requise</h2>
-<p><strong>Spécifications matérielles</strong></p>
+<section id="spécifications-matérielles" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="spécifications-matérielles"><span class="header-section-number">2.1.1</span> Spécifications matérielles</h3>
 <p>Le système Climsoft requiert les spécifications matérielles typiques suivantes : un PC avec une vitesse de processeur d’au moins <strong>1 GHz</strong>, <strong>2 Go de mémoire vive (RAM)</strong> et un espace disque suffisant pour l’installation du logiciel d’application et le stockage de la base de données. <strong>Un minimum de 20 Go d’espace disque</strong> est recommandé. Un espace disque plus important sera nécessaire pour le stockage des données provenant des stations météorologiques automatiques ainsi que les images des documents (archives) papier. Cependant, l’idéal serait de stocker les images des documents papier sur des supports de stockage amovibles tels que des disques durs externes ou sur un lecteur réseau. <strong>Une connexion Internet</strong> est également souhaitable.</p>
-<p><strong>Spécifications logicielles</strong></p>
+</section>
+<section id="spécifications-logicielles" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="spécifications-logicielles"><span class="header-section-number">2.1.2</span> Spécifications logicielles</h3>
+<p>Pour une performance optimale de la base de données, il est recommandé d’utiliser le système d’exploitation (OS) Microsoft Windows 7 ou supérieur, 64 bits. Climsoft Version 4 est compatible avec les systèmes d’exploitation Windows suivants : XP, Vista, Windows 7, Windows 8.x et Windows 10. Pour une bonne installation il vous faut tout au moins les applications suivantes :</p>
 <ul>
-<li><p>Pour une performance optimale de la base de données, il est recommandé d’utiliser le système d’exploitation (OS) Microsoft Windows 7 ou supérieur, 64 bits. Climsoft Version 4 est compatible avec les systèmes d’exploitation Windows suivants : XP, Vista, Windows 7, Windows 8.x et Windows 10 ;</p></li>
 <li><p>Microsoft Office avec le tableur Excel est requis car le tableur Excel est l’application par défaut pour l’affichage des produits de données de Climsoft ;</p></li>
 <li><p>Un Logiciel antivirus ;</p></li>
 <li><p>La version minimale .Net Framework 4.5 est requise. Cette version de .NET Framework est fournie avec le paquet d’installation de Climsoft ;</p></li>
@@ -184,6 +193,60 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Le système de base de données <strong>MariaDB/MySQL</strong> et les scripts de base de données de Climsoft sont également fournis par le programme d’installation de Climsoft et seront copiés dans le sous-dossier appelé “dbase” dans le chemin d’installation ;</p></li>
 <li><p>Le logiciel <strong>WRPlot</strong> pour produire les graphiques “rose de vent” qui sera copié dans le sous-dossier appelé “Bin” dans le chemin d’installation.</p></li>
 </ul>
+</section>
+</section>
+<section id="procédures-dinstallation" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="procédures-dinstallation"><span class="header-section-number">2.2</span> Procédures d’installation</h2>
+<p>Avant d’entamer les procédures d’installation, veuillez tout d’abord vous assurer que votre PC répond aux exigences matérielles et logicielles avant d’installer Climsoft. Vous devez également disposer des privilèges d’administrateur de Windows pour pouvoir installer Climsoft.</p>
+<p>Il existe deux paquets d’installation pour Climsoft, l’un pour le système d’exploitation Windows 32 bits et l’autre pour le système d’exploitation 64 bits. Prendre le soin de bien choisir le paquet d’installation qui correspond à votre système d’exploitation. Il est bien vrai que les ordinateurs les plus récents sont de 64 bits, mais il convient de vérifier. En cas de besoin, bien vouloir consulter ce <a href="https://support.microsoft.com/fr-fr/windows/windows-32-et-64-bits-forum-aux-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d">lien</a>.</p>
+<p>Les étapes clés de l’installation sont les suivantes :</p>
+<ol type="1">
+<li><p>Exécutez le fichier exécutable de l’installation avec des privilèges élevés. Pour ce faire, faites un clic droit sur le fichier d’installation et choisissez “<strong>Exécuter en tant qu’administrateur</strong>” dans le menu contextuel. Pour rappel, “<em>climsoftV4_bit32_setup.exe</em>” est destiné aux systèmes d’exploitation 32 bits et “<em>climsoftV4_bit64_setup.exe</em>” est destiné aux systèmes d’exploitation 64 bits. L’assistant d’installation vous guidera tout au long du processus.</p></li>
+<li><p>Lorsque l’installation de base de Climsoft est terminée, une boîte de dialogue avec des options pour l’installation d’applications supplémentaires requises par Climsoft apparaîtra comme indiqué dans la ci-dessous :</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image-835807309.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Boîte de dialogue pour l’installations d’application supplémentaires</figcaption><p></p>
+</figure>
+</div>
+<p>Si au préalable certaines des applications listées sont déjà installées sur votre ordinateur, vous pouvez simplement décocher les applications en question. Il y’a la possibilité de les installées plutard en décochant. Si le cas, vous trouverez leur programme d’installation dans le dossier ‘<strong>bin</strong>’ du chemin d’installation.</p>
+<p>Par défaut, les applications tierces listées seront installées automatiquement dans l’ordre. Toutefois, si la version de Microsoft .Net Framework sur votre ordinateur est très ancienne et nécessite une mise à jour, l’assistant d’installation vous permettra de le faire simplement. Dans ce cas spécifique vous aurez le message d’erreur suivant contenant une invite à mettre à jour Microsoft .NET Framework :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image-2080932370.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Erreur d’initialisation du Microsoft .NET Framework</figcaption><p></p>
+</figure>
+</div>
+<p>Si une boîte de dialogue avertissement s’ouvre en indiquant que vous avez déjà une version plus récente de l’une de ces applications, cliquez sur le bouton Fermer pour poursuivre l’installation de l’application suivante.</p>
+<p>Par exemple la figure suivante montre en affiche une boîte de dialogue avec un avertissement indiquant qu’une version plus récente de Microsoft Visual C++ 2010 Redistributable a été détectée sur votre machine. Dans ce genre de situation, cliquez sur le bouton Fermer pour continuer l’installation de l’application suivante.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image-1225442569.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Avertissement d’une plus récente version de Visual C++ 2010 déjà installée.</figcaption><p></p>
+</figure>
+</div>
+<p>Aucours de l’installation de <strong>MariaDB</strong>, vous devez spécifier le numéro de port pour l’exécution du service <strong>MariaDB</strong>. il est fortement recommandé de choisir le port <strong>3308</strong>, qui est le numéro de port défini dans le fichier de configuration de Climsoft pour la connexion à la base de données MariaDB. Si pour certaines raisons vous choisissez un numéro différent, vous allez devoir reconfigurer la connexion à la base de données pour que le numéro de port soit le même que celui que vous aurez choisi.</p>
+<p><strong>Il est également important de noter que le mot de passe que vous avez défini pendant l’installation et la configuration de MariaDB sera requis lorsque vous vous connecterez à Climsoft pour la première fois.</strong></p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Notes
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si vous êtes invité à redémarrer l’ordinateur avant que toutes les installations sélectionnées soient terminées, veuillez choisir “redémarrer plus tard” puis redémarrer l’ordinateur lorsque toutes les installations seront terminées.</p>
+</div>
+</div>
+<p>Si l’installation de WRPlot semble prendre trop de temps, vérifiez la présence d’une deuxième boîte de dialogue d’installation qui peut être minimisée en bas de la barre des tâches et qui requiert votre approbation. Si cette boîte de dialogue est présente, ouvrez-la et répondez comme il se doit.</p>
+<p>Bien que WRPLot soit un freeware, vous avez besoin d’une clé de licence pour l’activer. Une clé de licence initiale, valable un an, est contenue dans le fichier “WRPLot_license.txt” dans le sous-répertoire “Bin” du dossier d’installation de Climsoft. En cas de besoin vous pouvez renouveler votre licence en vous enregistrant sur cette <a href="https://www.weblakes.com/software/freeware/wrplot-view/wrplot-view-registration/">page</a>.</p>
+<p>Au besoin si vous souhaitez (ré)installer MariaDB ou WRPLot plutard, les fichiers d’installation de ces applications sont contenus dans le sous-dossier “Bin” du dossier d’installation de Climsoft.</p>
+</section>
+<section id="création-de-bdd-climsoft-dans-mariadb" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="création-de-bdd-climsoft-dans-mariadb"><span class="header-section-number">2.3</span> Création de BDD Climsoft dans MariaDB</h2>
 
 
 </section>
