@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Manuel de l’Utilisateur Climsoft - 1&nbsp; Introduction</title>
+<title>Manuel de l’Utilisateur Climsoft - 2&nbsp; Installations</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./installation.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./summary.html" rel="next">
+<link href="./intro.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Installations</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -119,12 +119,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./installation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Installations</span></a>
+  <a href="./installation.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Installations</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -142,14 +142,20 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table des matières</h2>
+   
+  <ul>
+  <li><a href="#configuration-système-requise" id="toc-configuration-système-requise" class="nav-link active" data-scroll-target="#configuration-système-requise"><span class="toc-section-number">2.1</span>  Configuration système requise</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/oousmane/climsoft-manual-VF/edit/main/installation.qmd" class="toc-action">Modifier cette page</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Installations</span></h1>
 </div>
 
 
@@ -164,38 +170,23 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><strong>Qu’est-ce que Climsoft</strong> ?</p>
-<p><a href="https://climsoft.org">Climsoft</a> est un système de gestion de base de données climatiques. Il est composé d’une suite de logiciels conçus pour stocker de manière sécurisée et flexible des données climatiques et pour générer des informations et produits utiles à partir de ces dernières. Climsoft peut être utilisé pour collecter, stocker et analyser des données climatiques provenant de différentes sources (stations classiques, automatiques, site de radiosondage etc.). La version 4 de l’application cliente Climsoft a été élaborée sous Microsoft Visual Basic .NET et le moteur de stockage, c’est à dire la base de données par défaut est le logiciel MariaDB, un dérivé de MySQL, qui est un logiciel libre.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<section id="configuration-système-requise" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="configuration-système-requise"><span class="header-section-number">2.1</span> Configuration système requise</h2>
+<p><strong>Spécifications matérielles</strong></p>
+<p>Le système Climsoft requiert les spécifications matérielles typiques suivantes : un PC avec une vitesse de processeur d’au moins <strong>1 GHz</strong>, <strong>2 Go de mémoire vive (RAM)</strong> et un espace disque suffisant pour l’installation du logiciel d’application et le stockage de la base de données. <strong>Un minimum de 20 Go d’espace disque</strong> est recommandé. Un espace disque plus important sera nécessaire pour le stockage des données provenant des stations météorologiques automatiques ainsi que les images des documents (archives) papier. Cependant, l’idéal serait de stocker les images des documents papier sur des supports de stockage amovibles tels que des disques durs externes ou sur un lecteur réseau. <strong>Une connexion Internet</strong> est également souhaitable.</p>
+<p><strong>Spécifications logicielles</strong></p>
 <ul>
-<li><p><strong>MariaDB Server</strong> est un système de gestion de base de données relationnelle open source à usage général. C’est l’un des serveurs de base de données les plus populaires au monde, avec des utilisateurs notables tels que Wikipedia, WordPress.com et Google. MariaDB Server est publié sous la licence open source GPLv2 et est garanti de rester open source. Il est dérivé de MySQL. En savoir plus ici : <a href="https://mariadb.org" class="uri">https://mariadb.org</a>.</p></li>
-<li><p><strong>MySQL</strong> est un système de gestion de bases de données relationnelles (SGBDR). Il est distribué sous une double licence GPL et propriétaire. Il fait partie des logiciels de gestion de base de données les plus utilisés au monde, autant par le grand public (applications web principalement) que par des professionnels, en concurrence avec Oracle, PostgreSQL et Microsoft SQL Server. En savoir plus ici : <a href="https://www.mysql.com" class="uri">https://www.mysql.com</a></p></li>
-<li><p><strong>Visual Basic</strong> est un langage de programmation orienté objet développé par Microsoft. L'utilisation de Visual Basic facilite la création d'applications .NET de type sécurisé. Ce permet le développement rapide d’applications, la création d’interfaces utilisateur graphiques ainsi que l’accès aux bases de données. En savoir plus ici : <a href="https://learn.microsoft.com/fr-fr/dotnet/visual-basic/" class="uri">https://learn.microsoft.com/fr-fr/dotnet/visual-basic/</a></p></li>
+<li><p>Pour une performance optimale de la base de données, il est recommandé d’utiliser le système d’exploitation (OS) Microsoft Windows 7 ou supérieur, 64 bits. Climsoft Version 4 est compatible avec les systèmes d’exploitation Windows suivants : XP, Vista, Windows 7, Windows 8.x et Windows 10 ;</p></li>
+<li><p>Microsoft Office avec le tableur Excel est requis car le tableur Excel est l’application par défaut pour l’affichage des produits de données de Climsoft ;</p></li>
+<li><p>Un Logiciel antivirus ;</p></li>
+<li><p>La version minimale .Net Framework 4.5 est requise. Cette version de .NET Framework est fournie avec le paquet d’installation de Climsoft ;</p></li>
+<li><p>Le paquet d’installation de Climsoft disponible <a href="https://github.com/climsoft/Climsoft/releases/">ici</a></p></li>
+<li><p>Le système de base de données <strong>MariaDB/MySQL</strong> et les scripts de base de données de Climsoft sont également fournis par le programme d’installation de Climsoft et seront copiés dans le sous-dossier appelé “dbase” dans le chemin d’installation ;</p></li>
+<li><p>Le logiciel <strong>WRPlot</strong> pour produire les graphiques “rose de vent” qui sera copié dans le sous-dossier appelé “Bin” dans le chemin d’installation.</p></li>
 </ul>
-</div>
-</div>
-<p>Le système Climsoft comprend entre autres:</p>
-<ol type="1">
-<li><p>La base de données, qui contient les données climatiques de plusieurs stations dans une structure logique et structure logique et flexible ;</p></li>
-<li><p>Des formulaires de saisies, qui permet aux utilisateurs d’ajouter de nouvelles données à partir du clavier et ce de manière sûre et contrôlée.</p></li>
-<li><p>Des options permettant d’importer des données climatiques dans la base de données sous différents formats, par exemple des données provenant de stations météorologiques automatiques (SMA), CLICOM ASCII, NOAA GTS et des fichiers textes</p></li>
-<li><p>Des modules permettant exporter les données climatiques dans des formats prêts à être utilisés par de nombreuses applications climatiques à savoir <a href="http://etccdi.pacificclimate.org/software.shtml">RCimDex</a>, <a href="https://iri.columbia.edu/our-expertise/climate/tools/cpt/">Climate Predictability Tool</a> (CPT), <a href="https://earlywarning.usgs.gov/fews/software-tools/20">GeoCLIM</a>, INSTAT ou <a href="https://r-instat.org/team.html">R-INSTAT</a>, <a href="https://iri.columbia.edu/our-expertise/climate/tools/cdt/">Climate Data Tool</a>, etc.;</p></li>
-<li><p>Des facilités de gestion d’images de documents papier (archives papiers) en soutien au programme de sauvetage de données de l’OMM ;</p></li>
-<li><p>Des options de contrôle de la qualité, et des modules de suivi, vérification des données insérées dans la base ;</p></li>
-<li><p>Un certain nombre de produits, des programmes d’application qui utilisent des sous-ensembles de données stockées dans la base de données pour produire des rapports utiles, des résumés, etc.</p></li>
-<li><p>Des fonctions de gestion du système pour gérer l’accès des utilisateurs, surveiller les opérations, d’administrer la base de données et d’adapter les fonctions du système aux besoins au niveau local.</p></li>
-</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -333,13 +324,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Préface</span>
+      <a href="./intro.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./installation.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Installations</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./summary.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Résumé</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

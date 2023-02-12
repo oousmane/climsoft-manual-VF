@@ -1,5 +1,6 @@
 project:
   type: book
+  output-dir: "docs"
 
 book:
   title: "Manuel de l'Utilisateur Climsoft"
