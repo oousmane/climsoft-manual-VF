@@ -79,13 +79,46 @@ Si pour certaines raisons vous choisissez un numéro différent, vous allez devo
 Si vous êtes invité à redémarrer l'ordinateur avant que toutes les installations sélectionnées soient terminées, veuillez choisir "redémarrer plus tard" puis redémarrer l'ordinateur lorsque toutes les installations seront terminées.
 :::
 
-Si l'installation de WRPlot semble prendre trop de temps, vérifiez la présence d'une deuxième boîte de dialogue d'installation qui peut être minimisée en bas de la barre des tâches et qui requiert votre approbation.
+Si l'installation de WRPlot prend anormalement trop de temps, vérifiez la présence d'une deuxième fenêtre d'installation qui le plus souvent est minimisée en bas de la barre des tâches et nécessite une approbation de votre part.
 Si cette boîte de dialogue est présente, ouvrez-la et répondez comme il se doit.
 
 Bien que WRPLot soit un freeware, vous avez besoin d'une clé de licence pour l'activer.
-Une clé de licence initiale, valable un an, est contenue dans le fichier "WRPLot_license.txt" dans le sous-répertoire "Bin" du dossier d'installation de Climsoft.
+Une clé de licence initiale, valable un an, est contenue dans le fichier "*WRPLot_license.txt*" dans le sous-répertoire "*Bin*" du dossier d'installation de Climsoft.
 En cas de besoin vous pouvez renouveler votre licence en vous enregistrant sur cette [page](https://www.weblakes.com/software/freeware/wrplot-view/wrplot-view-registration/).
 
-Au besoin si vous souhaitez (ré)installer MariaDB ou WRPLot plutard, les fichiers d'installation de ces applications sont contenus dans le sous-dossier "Bin" du dossier d'installation de Climsoft.
+Au besoin si vous souhaitez (ré)installer MariaDB ou WRPLot plus tard, les fichiers d'installation de ces applications se trouvent dans le sous-dossier "**Bin**" du dossier d'installation de Climsoft.
 
 ## Création de BDD Climsoft dans MariaDB
+
+Après avoir installé avec succès Climsoft ainsi que toutes les applications tierces notamment MariaDB, vous allez devoir créer la BDD Climsoft (les tables, et les relations entre elles).
+Pour ce faire un script SQL est mis à votre disposition.
+Par défaut, il se trouve dans le sous-répertoire "Dbase" du répertoire d'installation de Climsoft.
+Pour exécuter le script en question, suivez scrupuleusement les étapes ci-après :
+
+1.  Lancez la console MariaDB à partir du Menu Démarrer de Windows en cliquant sur le client MySQL (MariaDB 10.x) comme indiqué voir la figure ci-dessous.
+    Vous pouvez également taper "MariaDB" dans le champ de recherche.
+    Il est important de noter que la boîte de dialogue obtenue peut être légèrement différente, selon la version de Sytème d'exploitation Windows.
+
+![Exécution de la console MariaDB](images/image-137840762.png)
+
+2.  Une fenêtre va s'ouvrir vous invitant à taper un mot de passe pour accéder à MariaDB, en fait il s'agit du mot de passe créé pendant son installation.
+    Il faut garder à l'esprit que le nom d'utilisateur est **"root"** et qu'il va falloir garder jalousement ce mot de passe.
+
+![Création d'un mot de passe pour la BDD](images/image-2017583986.png)
+
+Si le mot de passe tapé est le bon, la fenêtre suivante s'ouvrira.
+Il s'agit de l'invite de commande de MariaDB.
+
+![Console MariaDB](images/image-1604271967.png)
+
+En supposant que le fichier script pour la création de la base de données de Climsoft version 4 (Climsoftv4) se trouve dans le chemin "C:\\Program Files (x86)\\ClimsoftV4\\Dbase".
+Il s'y trouve par défaut.
+
+3.  Tapez la commande suivante à l'invite :
+
+"`Source C:\Program Files (x86)\Climsoftv4\Dbase\mariadb_climsoft_db_v4_all.sql`"
+
+Si vous avez tapé la commande correctement, le script créera les bases de données de la version 4 de Climsoft : Deux (2) bases de données sont créées, la base de données opérationnelle (mariadb_climsoft_db_v4) et la base de données de test qui contient des données à des fins de test (mariadb_climsoft_test_db_v4).
+
+4.  Pour contrôler ou vérifier que les bases de données de Climsoft Version 4 ont été créées dans le moteur de base de données MariaDB, tapez : "`Show databases` ;" dans l'invite du client MariaDB et appuyez sur la touche Entrée.
+    Les 2 bases de données Climsoft seront alors listées avec les autres schémas de base de données fournis avec MariaDB.
